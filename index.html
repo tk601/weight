@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>適正体重の計算</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="">
+        <h1>適正体重を測定します</h1>
+        <h2>あなたの身長と体重を入力してください</h2>
+      </div>
+      <div class="fs-2 mt-4 border rounded">
+        <form action="weight1.php" method="post" >
+          <p>
+            <label>身長：</label>
+            <input class="form-text" type="text" name="height">cm
+          </p>
+          <p>
+            <label>体重</label>
+            <input type="text" name="weight">kg
+          </p>
+          <p class="fs-3">
+            <input class="btn btn-primary" type="submit" value="送信する">
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
