@@ -12,15 +12,11 @@
         <p>
           <?php echo '現在の体重' . str2html($weight) . 'kg <br>' ?>
         </p>
-        <p>
-          <?php
-            if ($weight < $round) {
-              echo 'あと' . str2html($ideal_weight) . 'kg増量すれば適正体重です。';
-            } else {
-              echo 'あと' . str2html($ideal_weight) . 'kg減量すれば適正体重です。';
-            }
-          ?>
-        </p>
+        <?php if ($weight < $round) : ?>
+          <p><?php echo 'あと' . str2html($ideal_weight) . 'kg増量すれば適正体重です。' ?></p>
+        <?php else : ?>
+          <p><?php echo 'あと' . str2html($ideal_weight) . 'kg減量すれば適正体重です。'; ?></p>
+        <?php endif; ?>
       </div>
     </div>
 
